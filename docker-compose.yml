@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  ganache-local:
+    image: trufflesuite/ganache-cli
+    ports:
+      - "8545:8545"
+    command: --deterministic
+  #mainnet-fork:
+  #  image: trufflesuite/ganache-cli
+  #  ports:
+  #    - "8546:8546"
+  #  environment:
+  #    - WEB3_INFURA_PROJECT_ID
+  #  command: --deterministic --port 8546 --chainId 5778 --fork https://mainnet.infura.io/v3/$WEB3_INFURA_PROJECT_ID

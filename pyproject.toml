@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "test"
+version = "0.1.0"
+description = ""
+authors = ["Arthur Laurent <laurent.arthur75@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.10"
+py-solc-x = "^1.1.1"
+eth-brownie = "^1.19.0"
+pytest-env = "^0.6.2"
+pydantic = "^1.9.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+piprot = "^0.9.11"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
